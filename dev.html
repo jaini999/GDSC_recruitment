@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Dashboard</title>
+    <link rel="stylesheet" href="dev.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="login-page" class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Dashboard -->
+    <div id="dashboard" class="hidden">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" id="homeLink">Home</a></li>
+                <li><a href="#" id="aboutLink">About Us</a></li>
+                <li><a href="#" id="contactLink">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div id="home" class="content">
+            <h2>Understanding Graphs and Their Importance</h2>
+            <p>Graphs are essential tools in data visualization, helping us represent information in a visual and simplified manner. Different types of graphs serve different purposes, whether you want to showcase trends, compare values, or track growth.</p>
+
+            <div class="graph-definitions">
+                <div class="graph-item">
+                    <h3>Bar Graph</h3>
+                    <p>A bar graph displays data using rectangular bars. Each bar represents a category of data, and the length of the bar is proportional to the value of the data.</p>
+                    <img src="https://via.placeholder.com/300x200.png?text=Bar+Graph" alt="Bar Graph">
+                </div>
+                <div class="graph-item">
+                    <h3>Line Graph</h3>
+                    <p>A line graph shows information as a series of data points called 'markers' connected by straight line segments. It is often used to visualize a trend in data over intervals of time.</p>
+                    <img src="https://via.placeholder.com/300x200.png?text=Line+Graph" alt="Line Graph">
+                </div>
+                <div class="graph-item">
+                    <h3>Pie Chart</h3>
+                    <p>A pie chart is a circular statistical graphic, divided into slices to illustrate numerical proportions. It helps to visualize part-to-whole relationships in data.</p>
+                    <img src="https://via.placeholder.com/300x200.png?text=Pie+Chart" alt="Pie Chart">
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="content hidden">
+            <h2>About Us</h2>
+            <p>Here are some analytics about our company:</p>
+            <canvas id="chart1"></canvas>
+            <canvas id="chart2"></canvas>
+        </div>
+
+        <!-- Contact Us Page -->
+<div id="contact" class="hidden contact-container">
+    <h2>Contact Us</h2>
+    
+    <!-- Contact Information Box -->
+    <div class="contact-box">
+        <table class="contact-table">
+            <tr>
+                <th>Email:</th>
+                <td><a href="mailto:info@yourwebsite.com">info@yourwebsite.com</a></td>
+            </tr>
+            <tr>
+                <th>Phone:</th>
+                <td><a href="tel:+123456789">+1 234 567 89</a></td>
+            </tr>
+            <tr>
+                <th>Follow us:</th>
+                <td>
+                    <a href="#" class="social-link">Twitter</a> | 
+                    <a href="#" class="social-link">LinkedIn</a> | 
+                    <a href="#" class="social-link">Facebook</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dev.js"></script>
+</body>
+</html>
